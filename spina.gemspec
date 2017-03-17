@@ -19,66 +19,25 @@ Gem::Specification.new do |s|
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>.freeze, [">= 5.0"])
-      s.add_runtime_dependency(%q<bcrypt>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<haml-rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<sass-rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<coffee-rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<jquery-rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<jquery-fileupload-rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<carrierwave>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<mini_magick>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<cancancan>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<ancestry>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<breadcrumbs_on_rails>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<turbolinks>.freeze, ["~> 5"])
-      s.add_runtime_dependency(%q<kaminari>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<globalize>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<activemodel-serializers-xml>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<rack-rewrite>.freeze, ["~> 1.5.0"])
-      s.add_runtime_dependency(%q<bourbon>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<neat>.freeze, [">= 0"])
-    else
-      s.add_dependency(%q<rails>.freeze, [">= 5.0"])
-      s.add_dependency(%q<bcrypt>.freeze, [">= 0"])
-      s.add_dependency(%q<haml-rails>.freeze, [">= 0"])
-      s.add_dependency(%q<sass-rails>.freeze, [">= 0"])
-      s.add_dependency(%q<coffee-rails>.freeze, [">= 0"])
-      s.add_dependency(%q<jquery-rails>.freeze, [">= 0"])
-      s.add_dependency(%q<jquery-fileupload-rails>.freeze, [">= 0"])
-      s.add_dependency(%q<carrierwave>.freeze, [">= 0"])
-      s.add_dependency(%q<mini_magick>.freeze, [">= 0"])
-      s.add_dependency(%q<cancancan>.freeze, [">= 0"])
-      s.add_dependency(%q<ancestry>.freeze, [">= 0"])
-      s.add_dependency(%q<breadcrumbs_on_rails>.freeze, [">= 0"])
-      s.add_dependency(%q<turbolinks>.freeze, ["~> 5"])
-      s.add_dependency(%q<kaminari>.freeze, [">= 0"])
-      s.add_dependency(%q<globalize>.freeze, [">= 0"])
-      s.add_dependency(%q<activemodel-serializers-xml>.freeze, [">= 0"])
-      s.add_dependency(%q<rack-rewrite>.freeze, ["~> 1.5.0"])
-      s.add_dependency(%q<bourbon>.freeze, [">= 0"])
-      s.add_dependency(%q<neat>.freeze, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<rails>.freeze, [">= 5.0"])
-    s.add_dependency(%q<bcrypt>.freeze, [">= 0"])
-    s.add_dependency(%q<haml-rails>.freeze, [">= 0"])
-    s.add_dependency(%q<sass-rails>.freeze, [">= 0"])
-    s.add_dependency(%q<coffee-rails>.freeze, [">= 0"])
-    s.add_dependency(%q<jquery-rails>.freeze, [">= 0"])
-    s.add_dependency(%q<jquery-fileupload-rails>.freeze, [">= 0"])
-    s.add_dependency(%q<carrierwave>.freeze, [">= 0"])
-    s.add_dependency(%q<mini_magick>.freeze, [">= 0"])
-    s.add_dependency(%q<cancancan>.freeze, [">= 0"])
-    s.add_dependency(%q<ancestry>.freeze, [">= 0"])
-    s.add_dependency(%q<breadcrumbs_on_rails>.freeze, [">= 0"])
-    s.add_dependency(%q<turbolinks>.freeze, ["~> 5"])
-    s.add_dependency(%q<kaminari>.freeze, [">= 0"])
-    s.add_dependency(%q<globalize>.freeze, [">= 0"])
-    s.add_dependency(%q<activemodel-serializers-xml>.freeze, [">= 0"])
-    s.add_dependency(%q<rack-rewrite>.freeze, ["~> 1.5.0"])
-    s.add_dependency(%q<bourbon>.freeze, [">= 0"])
-    s.add_dependency(%q<neat>.freeze, [">= 0"])
   end
+
+  s.add_dependency 'rails', '>= 5.0'
+  s.add_dependency 'bcrypt'
+  s.add_dependency 'haml-rails'
+  s.add_dependency 'sass-rails'
+  s.add_dependency 'coffee-rails'
+  s.add_dependency 'jquery-rails'
+  s.add_dependency 'jquery-fileupload-rails'
+  s.add_dependency 'carrierwave'
+  s.add_dependency 'mini_magick'
+  s.add_dependency 'cancancan'
+  s.add_dependency 'ancestry'
+  s.add_dependency 'breadcrumbs_on_rails'
+  s.add_dependency 'turbolinks', '~> 5'
+  s.add_dependency 'kaminari'
+  s.add_dependency 'globalize', '~> 5.1.0.beta1'
+  # s.add_dependency 'activemodel-serializers-xml'
+  s.add_dependency 'rack-rewrite', '~> 1.5.0'
+  s.add_dependency 'bourbon'
+  s.add_dependency 'neat'
 end
