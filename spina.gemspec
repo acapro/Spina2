@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
-<<<<<<< HEAD
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rails>.freeze, [">= 5.0"])
       s.add_runtime_dependency(%q<bcrypt>.freeze, [">= 0"])
@@ -83,7 +82,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bourbon>.freeze, [">= 0"])
     s.add_dependency(%q<neat>.freeze, [">= 0"])
   end
-=======
   s.add_dependency 'rails', '>= 5.0'
   s.add_dependency 'bcrypt'
   s.add_dependency 'haml-rails'
@@ -103,5 +101,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'rack-rewrite', '~> 1.5.0'
   s.add_dependency 'bourbon'
   s.add_dependency 'neat'
->>>>>>> origin/master
 end
