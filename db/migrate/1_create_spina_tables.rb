@@ -49,6 +49,7 @@ class CreateSpinaTables < ActiveRecord::Migration
     end
 
     create_table "spina_lines", force: :cascade do |t|
+      t.text     "content"
       t.datetime "created_at"
       t.datetime "updated_at"
     end
@@ -64,6 +65,11 @@ class CreateSpinaTables < ActiveRecord::Migration
     end
 
     create_table "spina_pages", force: :cascade do |t|
+      t.string   "title"
+      t.string   "menu_title"
+      t.string   "description"
+      t.string   "seo_title"
+      t.string   "materialized_path"
       t.boolean  "show_in_menu",        default: true
       t.string   "slug"
       t.boolean  "deletable",           default: true
@@ -125,6 +131,7 @@ class CreateSpinaTables < ActiveRecord::Migration
     end
 
     create_table "spina_texts", force: :cascade do |t|
+      t.text     "content"
       t.datetime "created_at"
       t.datetime "updated_at"
     end
