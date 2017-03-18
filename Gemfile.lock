@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    spina (0.10.0)
+    spina (0.10.2)
       ancestry
       bcrypt
-      bourbon
+      bourbon (~> 4)
       breadcrumbs_on_rails
       cancancan
       carrierwave
@@ -15,9 +15,9 @@ PATH
       jquery-rails
       kaminari
       mini_magick
-      neat
+      neat (= 1.8.0)
       rack-rewrite (~> 1.5.0)
-      rails (>= 5.0)
+      rails (~> 5.0.1)
       sass-rails
       turbolinks (~> 5)
 
@@ -146,8 +146,8 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    neat (2.0.0)
-      sass (~> 3.4)
+    neat (1.8.0)
+      sass (>= 3.3)
       thor (~> 0.19)
     nio4r (2.0.0)
     nokogiri (1.7.0.1)

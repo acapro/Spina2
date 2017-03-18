@@ -12,3 +12,6 @@ test/dummy/app/assets/fonts/
 test/dummy/config/application.yml
 coverage/*
 *.gemfile.lock
+*.DS_Store
+.ruby-version
+.ruby-gemset
