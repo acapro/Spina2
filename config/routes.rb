@@ -13,6 +13,7 @@ Spina::Engine.routes.draw do
       end
     end
 
+    resources :storages
     resources :users
 
     # Sessions
