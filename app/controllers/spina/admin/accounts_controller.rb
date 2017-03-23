@@ -10,9 +10,9 @@ module Spina
 
       def update
         if current_account.update_attributes(account_params)
-          redirect_to :back
+          redirect_back(fallback_location: admin_root_path)
         else
-          redirect_to :back
+          redirect_back(fallback_location: admin_root_path)
         end
       end
 
