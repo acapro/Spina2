@@ -34,8 +34,7 @@ Spina::Engine.routes.draw do
 
     resources :page_parts do
       collection do
-        get 'wysihtml5_link/:object_id' => 'page_parts#wysihtml5_link', as: :wysihtml5_link
-        post 'wysihtml5_link/:object_id' => 'page_parts#insert_wysihtml5_link'
+        get 'wysihtml5_links' => 'page_parts#wysihtml5_link', as: :wysihtml5_links
       end
     end
 

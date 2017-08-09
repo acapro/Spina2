@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spina (0.10.2)
+    spina (0.10.44)
       ancestry
       bcrypt
       bourbon (~> 4)
